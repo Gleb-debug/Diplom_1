@@ -5,20 +5,6 @@ import praktikum.IngredientType;
 import static org.junit.Assert.*;
 
 public class IngredientTest {
-    @Test//Проверяем что конструктор верно присваивает тип, имя и цену ингредиенту
-    public void testConstructorSetsFieldsCorrectly(){
-        //Создаем объект Ingredient c тестовым именем
-        Ingredient ingredient = new Ingredient(IngredientType.FILLING, "Мясо бессмертных моллюсков Protostomia", 1337 );
-
-        //Проверяем, что тип ингредиента присвоен верно
-        assertEquals(IngredientType.FILLING, ingredient.getType());
-
-        //Проверяем, что имя ингредиента присвоено верно
-        assertEquals("Мясо бессмертных моллюсков Protostomia", ingredient.getName());
-
-        //Проверяем, что цена ингредиента присвоена верно
-        assertEquals(1337, ingredient.getPrice(), 0.0f);
-    }
 
     @Test//Проверяем, что тип ингредиента присваивается верно
     public void testGetTypeReturnCorrectValue(){

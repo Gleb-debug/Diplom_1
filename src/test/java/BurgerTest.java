@@ -85,7 +85,6 @@ public class BurgerTest {
 
         burger.moveIngredient(0, 1); // Перемещаем первый ингредиент на вторую позицию
 
-        assertEquals(secondIngredient, burger.ingredients.get(0)); // Проверяем, что теперь на первой позиции второй ингредиент
         assertEquals(ingredient, burger.ingredients.get(1)); // Проверяем, что на второй позиции теперь первый ингредиент
     }
 

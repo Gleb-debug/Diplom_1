@@ -5,16 +5,25 @@ import static org.junit.Assert.*;
 
 public class IngredientTypeTest {
     @Test//Проверяем, что все типы ингредиентов существуют
-    public void testIngredientTypeExists(){
+    public void testIngredientTypeExistsSauce(){
         //Проверяем наличие всех типов
-        assertNotNull(IngredientType.FILLING);
         assertNotNull(IngredientType.SAUCE);
     }
 
     @Test//Проверяем, что название типов совпадают с ожидаемыми значениями
-    public void testIngredientTypeNames(){
-        assertEquals("SAUCE", IngredientType.SAUCE.name());
+    public void testIngredientTypeNamesFilling(){
         assertEquals("FILLING", IngredientType.FILLING.name());
+    }
+
+    @Test//Проверяем, что название типов совпадают с ожидаемыми значениями
+    public void testIngredientTypeNamesSauce(){
+        assertEquals("SAUCE", IngredientType.SAUCE.name());
+    }
+
+    @Test//Проверяем, что все типы ингредиентов существуют
+    public void testIngredientTypeExistsFilling(){
+        //Проверяем наличие всех типов
+        assertNotNull(IngredientType.FILLING);
     }
 }
 
